@@ -3,7 +3,7 @@ matrix = [[0 for i in range(n)] for i in range(n)] #初始化矩阵
 x_vector , y_vector = [1,0,-1,0] , [0,1,0,-1] 
 # x,y方向的前进分量，顺序为下右上左
 # 注意：为符合编程习惯，x在实际中是竖直方向，y在实际中是水平方向
-x,y,z = 0,0,0 # 初始化坐标
+x,y,d = 0,0,0 # 初始化坐标
 for k in range(1,n**2+1):
     matrix[x][y] = k    # 填入
     temp_x , temp_y = x+x_vector[d] , y+y_vector[d] # 暂时更新坐标
